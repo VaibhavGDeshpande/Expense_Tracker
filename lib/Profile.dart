@@ -11,7 +11,7 @@ class ProfileScreen extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Profile'),
+          title: const Text('Profile'),
           centerTitle: true,
         ),
         body: ProfileBody(),
@@ -26,55 +26,55 @@ class ProfileBody extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        SizedBox(height: 20.0),
-        CircleAvatar(
+        const SizedBox(height: 20.0),
+        const CircleAvatar(
           radius: 50.0,
           backgroundImage: AssetImage('assets/profile_pic.jpg'), // Replace with your profile picture asset
         ),
-        SizedBox(height: 10.0),
-        Center(
+        const SizedBox(height: 10.0),
+        const Center(
           child: Text(
-            'John Doe', // Replace with your username
+            'Vaibhav Ganesh Deshpande', // Replace with your username
             style: TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
-        SizedBox(height: 10.0),
+        const SizedBox(height: 10.0),
         Center(
           child: TextButton(
             onPressed: () {
               // Add functionality to edit profile
             },
-            child: Text('Edit'),
+            child: const Text('Edit'),
           ),
         ),
-        SizedBox(height: 40.0),
+        const SizedBox(height: 40.0),
         ListTile(
-          leading: Icon(Icons.account_circle),
-          title: Text('Account'),
+          leading: const Icon(Icons.account_circle),
+          title: const Text('Account'),
           onTap: () {
             // Add functionality to navigate to account screen
           },
         ),
         ListTile(
-          leading: Icon(Icons.settings),
-          title: Text('Settings'),
+          leading: const Icon(Icons.settings),
+          title: const Text('Settings'),
           onTap: () {
             // Add functionality to navigate to settings screen
           },
         ),
         ListTile(
-          leading: Icon(Icons.file_download),
-          title: Text('Export Data'),
+          leading: const Icon(Icons.file_download),
+          title: const Text('Export Data'),
           onTap: () {
             // Add functionality to export data
           },
         ),
         ListTile(
-          leading: Icon(Icons.logout),
-          title: Text('Logout'),
+          leading: const Icon(Icons.logout),
+          title: const Text('Logout'),
           onTap: () {
             // Add functionality to logout
           },
